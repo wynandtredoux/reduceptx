@@ -31,7 +31,7 @@ void main(int argc, char* argv[]) {
 	else {
 		filename = filelocation;
 	}
-	cout << "filepath is " << filepath << "\nfilename is " << filename;
+	cout << "filepath is " << filepath << "\nfilename is " << filename << endl;
 
 	//open infile for reading
 	ifstream infile(filelocation, ios::in);
@@ -53,7 +53,6 @@ void main(int argc, char* argv[]) {
 
 	string line;
 	while (getline(infile, line)) {
-		//cout << line << endl;
 
 		//if the line contains an empty point
 		if (line == "0 0 0 0") {
